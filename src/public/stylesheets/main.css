@@ -1,0 +1,140 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.fit {
+    width: 100%;
+    height: auto;
+}
+
+.connectedwebsock {
+    background-color: #4CAF50;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.disconnectedwebsock {
+    background-color: #f44336;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.statedisplay {
+    background-color: #cccccc;
+    border-radius: 25px;
+}
+
+.microphonebox {
+    background-color: #99ccff;
+    border-radius: 25px;
+}
+
+.answerbox {
+    border-radius: 25px;
+    background-color: #cccccc;
+}
+
+.navigationbox {
+    border-radius: 25px;
+    background-color: #cccccc;
+}
+
+.navigation {
+    background-color: #99ccff;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+}
+
+.clickednavigation {
+    background-color: #7affff;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+}
+
+.answer {
+    background-color: #99ccff;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+}
+
+.clickedanswer {
+    background-color: #7affff;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+}
+
+.stttext {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.microphonestateon {
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 25px;
+}
+
+.microphonestateoff{
+    cursor: pointer;
+    background-color: #f44336;
+    border-radius: 25px;
+}

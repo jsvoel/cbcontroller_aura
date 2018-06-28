@@ -1,0 +1,46 @@
+﻿extends layout
+
+block content
+    div(class='row')
+        div(class="col-2 disconnectedwebsock" id='button_connect' onclick="connect_robot('button_connect', 'serverip', 'ws_state')")
+            div Websocket state
+            div(id='ws_state') Disconnected
+        div(class='col-1')
+        div(class='col-2 statedisplay')
+            div Chatbot state
+            div(id='chatbot_state') Disconnected
+        div(class='col-1')
+        div(class='col-2 microphonestateoff' id='microphone_button' onclick="robot_chatbot_state.onToggleMic()")
+            div Microphone state
+            div(id='microphone_state') Unknown
+
+    br
+
+    div(class='row microphonebox')
+        div(class='col-2') Confidence
+        div(class='col-10') The text the robot understood
+        div(class='col-2 stttext' id='chatbot_stt_percent') 50%
+        div(class='col-10 stttext' id='chatbot_stt_text') Bla bla bla
+
+    br
+
+    div(class='row')
+        div(class='col-9 answerbox' id='chatbot_answers_box')
+            div(class='answer' id='answer_1' onclick="robot_chatbot_state.onAnswerClick('answer_1')")
+                div 40%
+                div(id='answer_1_content') Antwort Antwort Antwort 1
+            br
+            div(class='answer' id='answer_2' onclick="robot_chatbot_state.onAnswerClick('answer_2')")
+                div 40%
+                div(id='answer_1_content') Antwort Antwort Antwort 1
+            br
+            div(class='answer' id='answer_3' onclick="robot_chatbot_state.onAnswerClick('answer_3')")
+                div 40%
+                div(id='answer_1_content') Antwort Antwort Antwort 1
+
+        div(class='col-3 navigationbox' id='chatbot_navigation_box')
+            div(class='navigation' id='navi_1' onclick="robot_chatbot_state.onNaviClick('navi_1')") Topic 1 Headline
+            br
+            div(class='navigation' id='navi_2' onclick="robot_chatbot_state.onNaviClick('navi_2')") Topic 2 Headline
+            br
+            div(class='navigation' id='navi_3' onclick="robot_chatbot_state.onNaviClick('navi_3')") Topic 3 Headline
